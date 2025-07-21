@@ -22,3 +22,19 @@ PS1> ==winget search --id dockerdesktop==
 ```
 
 
+## 設定 為 WSL2
+安裝Docker Desktop後 做以下個設定
+1. `Settings -> General -> use WSL2 based engin `
+2. `Settings -> WSL integration -> Debian, Ubuntu ..... ` 
+3. WSL Linux 內部裝  `apt-get  install docker.io`
+
+
+
+這個不確定要不要，沒有也可以運行
+`Settings -> General -> tcp://localhost:2375 without TLS`
+`$ export DOCKER_HOST=tcp://127.0.0.1:2375`
+
+
+
+https://learn.microsoft.com/zh-tw/windows/wsl/tutorials/wsl-containers
+

@@ -48,7 +48,7 @@ krb5-config
 
 
 
-# === RADIUS LDAP AD =======
+# === 2 RADIUS LDAP AD =======
 
 - https://www.freeradius.org/documentation/freeradius-server/4.0.0/howto/modules/ldap/base_configuration/index.html
 
@@ -125,7 +125,7 @@ sed '/^[[:blank:]]*(#)/d;s/#.*//;/^\s*$/d' file > out
 
 
 
-# === Radiud PAM ======
+# === 3 Radiud PAM ======
 
 
 https://github.com/beatgammit/simple-pam
