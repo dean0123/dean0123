@@ -4,6 +4,14 @@
 - 
 
 
+或  WINGET
+```
+PS1> winget search --id wsl
+PS1> winget install --id wsl
+PS1> winget list --id wsl
+PS1> winget uninstall --id wsl
+```
+
 開啓 WSL2
 
 ```
@@ -17,7 +25,3 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 
-或  WINGET
-```
-PS1> winget search --id wsl
-```
