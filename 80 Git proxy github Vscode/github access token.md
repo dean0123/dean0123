@@ -1,5 +1,6 @@
-tokenfakefake
-(2025-7-23 產生新的) 
+LINE 1 
+
+
 
 
 # 1 用Github commnad line HTTPS : 不能再用 password 必須改用 Personnal Access Token(PAT)， 或 Fine-grained Personal Access Token (FG PAT)
