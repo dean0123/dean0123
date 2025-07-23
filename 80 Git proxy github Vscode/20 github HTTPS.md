@@ -1,8 +1,8 @@
-ghp_tSJPd2CNZU26wQGux53g2amZiN80fakefake
+ghp_fakefake
 
 (2025-7-23 產生新的) 也可用在OAuth或API/Basic Auth
 
-ghp_tSJPd2CNZU26wQGux53g2amZiN80f3fakefake
+ghp_fakefake
 
 1. 到 github 網站， 
 2. 點右上頭像 -> Settings -> 
