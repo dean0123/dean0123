@@ -30,7 +30,7 @@ docker start/stop/rm dean01
 ```
 docker stop dean01
 docker commit dean01 dean02 (用現在container dean01  建立一個新的 image(不是container) dean02)
-docker run -it -d -p 5000:80 --name dean02 dean02 /bin/bash
+docker run -it -d -p 8000:80 --name dean02 dean02 /bin/bash
 ```
 
 

@@ -22,6 +22,9 @@ no_proxy="localhost,127.0.0.1"
 
 # SSH
 apt update
+apt install vim, python3-fastapi
+
+
 apt install ssh (openssh-server 一樣， 要選 5 Asia，72 Taipei 看是否可以自動 或固定)
 
 service --status-all 

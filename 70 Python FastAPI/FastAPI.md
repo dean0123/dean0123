@@ -4,7 +4,7 @@
 
 
 apt search fastapi, ivucorn
-install python3-fastapi python3-uvicorn 
+install python3-fastapi python3-uvicorn uvicorn
 vi main.py
 ```
 from fastapi import FastAPI
