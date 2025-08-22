@@ -1,9 +1,16 @@
-LINE 1 
+# ghp_fakefake
+
+1. 到 github 網站， 
+2. 點右上頭像 -> Settings -> 
+3. 左下方 Developer Settings -> Perdonal access Tokens -> Tokens (classec 就好)
+4. Generate new token (classic) 
+5. 選不過期，全部範圍 
 
 
 
 
-# 1 用Github commnad line HTTPS : 不能再用 password 必須改用 Personnal Access Token(PAT)， 或 Fine-grained Personal Access Token (FG PAT)
+
+# 用Github commnad line HTTPS : 不能再用 password 必須改用 Personnal Access Token(PAT)， 或 Fine-grained Personal Access Token (FG PAT)
 
 
 ## 幾種 git remote 的方法 

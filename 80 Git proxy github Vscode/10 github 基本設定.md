@@ -2,7 +2,7 @@
 - GIT 分支 使用指令 https://github.com/twtrubiks/Git-Tutorials
 
 
-Git 基本設定 
+## 01 Git 基本設定 
 ```
 git config --list
 git config --list --show-origin
@@ -20,9 +20,11 @@ git config --global --edit
 ```
 
 
-基本操作如下，細節如個別檔案
+## 02 基本操作如下，細節如個別檔案
 1. git init 設定 工作目錄 
 2. git remote add origin URL 設定連線remote origin
 3. git pull origin main 從remote拉檔案分支。或clone
 4. git add/commit/push -u origin main 存回檔案分支
 
+## pull 會有  rebase false|true，ff， merge衝突解決方式
+## Windows 有 credential-manager Auth 比較簡單，不用Token
