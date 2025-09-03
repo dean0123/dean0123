@@ -11,7 +11,7 @@
 
 
 ## 1. 工作目錄 workdir/repo (建立/進入/清除)
-```
+```git
 --> 1. 用 CLONE 建立 repo 
 $ mkdir workdir (工作目錄)
 $ cd workdir
