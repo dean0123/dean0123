@@ -25,13 +25,13 @@ https://download.docker.com/win/static/stable/x86_64/
 `inget install --id Docker.DockerCLI`
 
 ```
->inget search --id docker 
->inget install --id Docker.DockerCLI -e (會自動加PATH 到執行檔 docker 跟 dockerd) 
+> winget search --id docker 
+> winget install --id Docker.DockerCLI -e (會自動加PATH 到執行檔 docker 跟 dockerd) 
    Path environment variable modified; restart your shell to use the new value.
    Command line alias added: "docker"
    Command line alias added: "dockerd"
 
->winget list docker
+> winget list docker
 Name       Id               Version Source
 -------------------------------------------
 Docker CLI Docker.DockerCLI 28.2.2  winget
