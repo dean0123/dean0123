@@ -14,8 +14,9 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '(%b)%f'
 setopt PROMPT_SUBST
-PROMPT='%F{184}%n%f %F{2}%m%f %F{39}%~%f%F{181}${vcs_info_msg_0_}%f%(!.#.$) '
-# --> 右邊也顯示 GIT Branch R-PROMPT
+PROMPT='%F{green}%n %B%F{green}%m%f%b%f %F{39}%~%f${vcs_info_msg_0_}%(!.#.$) '
+PROMPT='%F{184}%n%f %K{blue}%B%F{2}%m%f%b%k %F{39}%~%f%F{181}${vcs_info_msg_0_}%f%(!.#.$) '
+# %B--%b 是粗體, %K--%k 是設定底色 %F--%f是字型顏色# --> 右邊也顯示 GIT Branch R-PROMPT
 RPROMPT=\$vcs_info_msg_0_
 
 # -------- 3: Hisroty ----------
