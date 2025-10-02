@@ -73,6 +73,21 @@ source ~/.zshrc
 ```
 
 
+brew install zsh-substring-search
+
+```
+# -------- 4: Syntax, Suggestion, Substring  -------
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey '^[[A'             history-substring-search-up
+bindkey '^[[B'             history-substring-search-down
+# 如果上面兩行不行, 就執行下面兩行
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
+```
+
+
 ## 2. 指令建議 語法 亮度
 ```sh
 brew install zsh-autosuggestions zsh-syntax-highlighting
@@ -87,6 +102,12 @@ if command -v brew >/dev/null 2>&1; then
   [ -r "$ZSH_SHARE/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ] && \
     source "$ZSH_SHARE/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 fi
+
+
+
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 ZRC
 

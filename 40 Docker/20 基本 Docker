@@ -1,0 +1,68 @@
+## 1. Search
+```
+docker search python
+docker search ubuntu
+```
+
+## 2. docker pull (Image)
+```
+docker pull python:3.10-slim-bookworm
+docker pull ubuntu:22.04
+docker iamges -a  # 查看 images
+```
+
+## 3. docker run -it (Image -> 建立容器)
+用 image 開 start comtainer 並執行一個命令  
+多用在啟動 Service 或 啟動基本 bash 進入處理
+```
+# ----- 建立容器, 執行, exit 結束後, 容器關閉停止
+$ docker run -it python:3.10-slim-bookworm /
+bin/bash 
+
+# ----- 建立容器 -d daemon 背景執行
+$ docker run -it -d python:3.10-slim-bookworm uvicorn main:app 
+$ docker logs  容器ID  # 看output Logs, 加 -f fresh
+
+
+$ docker ps -a        # 列出容器, 包含停下來的容器
+# ----- 列出 指定格式 容器
+$ docker ps -a  --format "table {{.Names}}\t{{.Image}}\t{{.Status}}\t{{.Command}}\t{{.Ports}}"  
+$ docker satrt 容器ID  # 啟動容器, 可用 容器ID 或容器name
+$ docker stop  容器ID 
+```
+
+## 4. docker exec -it (執行現有容器命令)
+多用在重新進入已經啟動的容器
+```
+docker start 容器ID 
+docker exec -it 容器ID /bin/bash  (或其他命令)
+```
+
+## 5. 清除 容器 containers Iamge
+一個一個清除 (容器Container) (Image)
+```
+docker ps -a
+docker stop 容器ID  (--force if needs)
+docker rm   容器ID
+docker ps -a
+
+docker images -a
+docker rmi  imageID:tag版本
+docker rmi  imageID
+docker images -a 
+```
+
+一次全清除
+```
+1. docker container prune           #清除所有 停掉的容器
+2. docker image  prune              #清除沒用的danging image
+3. docker system prune              #也清除,沒在用的 neiwork
+4. docker system prune -a --volumes #加清除 沒用的volumes 跟 build cache
+```
+
+## 6. docker network 
+網路是 docker 內各容器之間 或 對外 互相之間溝通的方式
+```
+docker network ls             # 列出 docker 的網路
+docker network inspect bridge # bridge 詳細狀況
+```

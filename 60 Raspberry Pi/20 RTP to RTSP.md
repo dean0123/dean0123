@@ -7,8 +7,9 @@ rpicam-vid -t 0 --codec libav --libav-format mpegts -o -| cvlc stream:///dev/std
 
 
 ## 2. 設定 Servive
-```
 pi@raspberrypi-10.18.61.229:~ $ cat > /etc/systemd/system/rtsp.service
+
+```
 [Unit]
 Description=RTSP Server
 After=multi-user.target
