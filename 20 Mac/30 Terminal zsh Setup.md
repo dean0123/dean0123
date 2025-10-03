@@ -164,3 +164,12 @@ brew install --cask font-sf-moni. (這個字型比較好看,Apple原來的)
 ```
 - 打開 iTerm2 > Settings > Profiles > Text，字型選：MesloLGS NF（或其他 Nerd Font）。
 - 顏色可選內建暗色系；若想更像 Ubuntu，可挑溫暖/橘紫系配色。
+
+
+
+## 4. vi 顏色 ～/。vimrc
+```sh
+syntax on
+filetype plugin indent on
+set term=builtin_ansi
+```
