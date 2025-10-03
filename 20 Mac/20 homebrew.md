@@ -43,7 +43,7 @@ ca-certificates			libssh2				sqlite
 certifi				libunistring			tree
 eza				libyaml				wget
 fastapi				mpdecimal			xz
-gettext				openssl@3			zsh-autocomplete
+gettext				openssl@3			zsh-autocomplete (Mac 已經有了 不用再裝)
 grep				pcre2				zsh-autosuggestions
 libgit2				python@3.13			zsh-history-substring-search
 libidn2				readline			zsh-syntax-highlighting
