@@ -3,6 +3,41 @@
 ## 1. 基本顏色設定
 
 ### 不要裝 Oh-My-Zsh 很難設定
+最近設定， 只設定 會的
+```sh 
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
+
+alias ls='ls -GF's
+alias ll='ls -lhGrt'
+alias la='ls -lahG'
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+
+# LSCOLORS: 近似 Ubuntu 的目錄/檔案色彩
+# export LSCOLORS=GxFxCxDxBxegedabagaced
+
+
+# ---- Ubuntu 風格 Prompt：user@host:cwd (git) $ ----
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+RPROMPT=\$vcs_info_msg_0_
+# PROMPT=\$vcs_info_msg_0_'%# '
+zstyle ':vcs_info:git:*' formats '(%b)'
+
+# 綠色 user@host，藍色目前目錄，括號顯示 git 分支，最後 $（root 變 #）
+PROMPT='%F{green}%n@%m%f:%F{cyan}%~%f${vcs_info_msg_0_}%(!.#.$) '
+
+```
+
+
 
 ```sh
 cat <<'ZRC' >> ~/.zshrc
