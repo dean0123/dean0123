@@ -171,5 +171,5 @@ brew install --cask font-sf-moni. (這個字型比較好看,Apple原來的)
 ```sh
 syntax on
 filetype plugin indent on
-set term=builtin_ansi
+autoindent
 ```
