@@ -19,7 +19,7 @@ git remote add origin https://XXXXXXXXX@github.com/dean0123/YYYYYYYYYY.git
 git pull origin main
 ```
 
-- pull = fetch + merge
+- pull = fetch + merge, 時不時 可以 一直 fetch new code 
 - 若要 放棄Local的修改， 全部重拉 Git 最新檔案一次
 
 ```sh
