@@ -36,6 +36,12 @@ git commit -m "修改版本訊息"
 git push -u origin main
 ```
 
+- 若要 強迫 Force PUSH Local的修改，蓋掉 Github 檔案。 
+```sh 
+git push -f origin main
+```
+
+
 > 用 `.gitignore` 檔案，避免 git 同步的檔案 或目錄，如設定檔， 備份暫存， package 等。 
 
 # 檢查功能

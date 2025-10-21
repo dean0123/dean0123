@@ -140,3 +140,17 @@ autoload -Uz compinit
 compinit
 setopt AUTO_CD AUTO_LIST AUTO_PARAM_KEYS
 ```
+
+
+
+
+----
+
+## 4. vi 顏色 ～/。vimrc
+```sh
+syntax on
+filetype plugin indent on
+autoindent
+hi CursorLine   cterm=NONE ctermbg=darkgrey
+set cursorline
+```

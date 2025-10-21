@@ -30,3 +30,22 @@
 9.  DB 改成 MS-SQL Server 要改哪些地方
 10. DB 要改成 Oracle 要改哪些地方
 
+
+
+
+
+    學習目標 
+    1: 了解 Python 基本語法，與檔案結構
+    2: 了解 Python FastAPI
+    3: 了解 Python 的 Package 管理工具 PIP （尋找S 安裝I 列表L 解除U）
+    4: 了解 Python 靜態網頁位置與設定
+    5: 了解 Python 後端程式及 RestAPI 寫法
+    6: 了解 API 文件讀取與測試
+    7: 了解 RestAPI 溝通方式及資料格式
+    8: 了解 CRUD 全端（前端與後端）應用操作
+    9: 了解 SQLite 特性及應用範圍
+    10: 了解 ORM 特性及應用
+    11: 了解 ORM 與 SQL Statement 差異
+    12: 了解 Postgres DB 
+    13: 了解 MS SQL Server DB 
+    14: 了解 PYthon 與 Oracle 結合

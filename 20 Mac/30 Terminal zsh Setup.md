@@ -3,7 +3,7 @@
 ## 1. 基本顏色設定 CLI PRPMPT LS VI
 
 ### 不要裝 Oh-My-Zsh 很難設定
-最近設定， 只設定 會的
+## 最近設定， 只設定 會的， 最少設定
 ```sh 
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -38,6 +38,7 @@ PROMPT='%F{green}%n@%m%f:%F{cyan}%~%f${vcs_info_msg_0_}%(!.#.$) '
 ```
 
 
+## 舊設定 太多。 
 
 ```sh
 cat <<'ZRC' >> ~/.zshrc
@@ -172,4 +173,6 @@ brew install --cask font-sf-moni. (這個字型比較好看,Apple原來的)
 syntax on
 filetype plugin indent on
 autoindent
+hi CursorLine   cterm=NONE ctermbg=darkgrey
+set cursorline
 ```
