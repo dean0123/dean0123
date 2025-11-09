@@ -3,7 +3,7 @@
 
 
 ## 01 Git 基本設定 
-```
+```sh
 git config --list
 git config --list --show-origin
 git config --global init.defaultbranch main
@@ -15,8 +15,7 @@ git config --global user.name dean0123
 git config --global user.email dean0000@gmail.com 
 
 git config --edit (修改 刪除 config)
-git config --global --edit 
-
+git config --global --edit  
 ```
 
 
