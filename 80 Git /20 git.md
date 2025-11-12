@@ -49,6 +49,7 @@ git push -f origin main
 2. 看 remote URL `git remote -v`
 2. 看 status HEAD `git status`
 2. 看 commit history `git log` (--oneline)
+2. 看 差異 `git show` (--oneline)
 
 
 # 檢查Branch 分支 功能
