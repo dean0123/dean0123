@@ -1,5 +1,22 @@
 # ubuntu 22.04.5
 
+
+## 1. 安裝 zsh autosuggestion syntex 用 api install 
+`apt install zsh zsh-syntax-highlighting zsh-autosuggestions`
+## 2. 另外安裝 substring search 用 git 取得 
+```sh
+- mkdir substr ; cd substr; git init; 
+- git pull https://github.com/zsh-users/zsh-history-substring-search.git
+- sudo mkdir /usr/share/zsh-history-substring-search/
+- sudo mv zsh-history-substring-search.zsh /usr/share/zsh-history-substring-search/
+```
+## 3. 改自己帳號的bash 到 zsh -->  `chsh -s /bin/zsh`
+測試 `/bin/zsh`
+改自己的shell `chsh -s /bin/zsh`
+
+## 4. 設定檔 ~/.zshrc 如下
+
+
 ```sh   (Put into ~/.zshrc)
 # ======= Dean Added .zshrc ========
 
