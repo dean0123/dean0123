@@ -58,6 +58,7 @@ setopt AUTO_CD AUTO_LIST AUTO_PARAM_KEYS
 
 
 
+# 其他設定 測試
 
 
 
